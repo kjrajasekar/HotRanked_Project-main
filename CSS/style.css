@@ -47,7 +47,6 @@ h1 {
     opacity: 0.3;
 }
 
-
 .half-circle-img {
     bottom: 0;
     left: 0;
@@ -61,8 +60,6 @@ h1 {
     font-weight: 600;
     color: #001E4C;
 }
-
-.banner .se-head {}
 
 .banner .dot-icon {
     left: 0;
@@ -161,7 +158,6 @@ button:focus:not(:focus-visible) {
 
 .search-btn:hover {
     background-color: #087FED;
-
 }
 
 .search-btn svg {
@@ -320,6 +316,9 @@ button:focus:not(:focus-visible) {
     display: block;
     width: 25%;
 }
+.country .owl-stage .owl-item  {
+    margin: -5px !important;
+}
 
 .feature-card .substract-img {
     bottom: -50px;
@@ -330,19 +329,26 @@ button:focus:not(:focus-visible) {
 
 .carousel .owl-theme .owl-nav {
     position: absolute;
-    top: -40%;
-    right: 0;
+    top: -65%;
+    right: -45px;
 }
 
 .category .owl-theme .owl-nav {
     position: absolute;
-    top: -20%;
-    right: -20px;
+    top: -45%;
+    right: -36px;
+
+}
+.toplist .owl-theme .owl-nav {
+    position: absolute;
+    top: -40%;
+    right: -36px;
+
 }
 
 .country .owl-theme .owl-nav {
     position: absolute;
-    top: -20%;
+    top: -60px;
     right: -20px;
 }
 
@@ -364,13 +370,11 @@ button:focus:not(:focus-visible) {
 
 .feature-card {
     background: linear-gradient(135deg, #031D4F, #077FE9, #1EE1E6);
-    /* background-image: url(../Images/Rectangle_82-removebg-preview.png); */
     color: white;
     padding: 20px;
     border-radius: 35px;
     margin: 1px;
     height: 100%;
-    /* box-shadow: 0 4px 8px 0 #004aad(0, 0, 0, 0.2), 0 6px 20px 0 #004aad(0, 0, 0, 0.19); */
     box-shadow: 0 0 5 5 #D2E0EBBF;
     transition: transform 0.3s ease-in-out;
     border: 1px solid #031D4FBF;
@@ -493,9 +497,9 @@ button:focus:not(:focus-visible) {
     background: linear-gradient(135deg, #E6F2FC, #E7F2F9, #E8F2F5);
 }
 
-.country-div-spacing {
+/* .country-div-spacing {
     padding-bottom: 140px;
-}
+} */
 
 .cat-card {
     border-radius: 40px;
@@ -585,7 +589,6 @@ button:focus:not(:focus-visible) {
     color: #636363;
 }
 
-
 .cat-card-body .creators-para {
     right: 12px;
     bottom: -1px;
@@ -632,8 +635,6 @@ button:focus:not(:focus-visible) {
     background-color: #2C5DEB;
 }
 
-
-
 .view-category-div .SE-arrowes {
     width: 34px;
     height: 33px;
@@ -650,8 +651,12 @@ button:focus:not(:focus-visible) {
     background-color: #1CE7E7;
 } */
 
-.view-category-div{
+/* .view-category-div{
     top:-12px;
+    right:-28px;
+} */
+.category .view-category-div, .view-country-div, .trend .view-category-div {
+    top:10px;
     right:-28px;
 }
 .view-category-div .SE-arrowes img {
@@ -703,7 +708,6 @@ button:focus:not(:focus-visible) {
 .country-img {
     position: relative;
     padding: 8px;
-    /* border: 6px double #000; */
     border-radius: 40px;
     overflow: hidden;
     text-align: center;
@@ -769,7 +773,6 @@ button:focus:not(:focus-visible) {
 }
 
 @media screen and (max-width: 993px) {
-
     /* country section */
     .country {
         left: 30%;
@@ -778,26 +781,30 @@ button:focus:not(:focus-visible) {
     .owl-carousel .item .country-img {
         width: 37%;
     }
+    .country .owl-stage .owl-item {
+        margin: 5px !important;
+    }
 }
 
 @media screen and (max-width: 769px) {
-
     /* country section */
     .country {
         left: 26%;
     }
 
     .owl-carousel .item .country-img {
-        width: 50%;
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 587px) {
-
     /* country section */
     .country {
         left: 32%;
     }
+    .banner-text {
+        font-size: 28px;
+    line-height: 26px;}
 
     .category-card {
         top: 70px;
@@ -806,7 +813,6 @@ button:focus:not(:focus-visible) {
     .view-country-div {
         width: 50%;
         margin: 90px auto 20px auto;
-
     }
 
     .owl-carousel .item .country-img {
@@ -816,7 +822,6 @@ button:focus:not(:focus-visible) {
 
 
 @media screen and (max-width: 475px) {
-
     /* country section */
     .country {
         left: 27%;
@@ -832,13 +837,12 @@ button:focus:not(:focus-visible) {
     }
 
     .owl-carousel .item .country-img {
-        width: 40%;
+        width: 45%;
     }
 
 }
 
 @media screen and (max-width: 321px) {
-
     /* country section */
     .country {
         left: 20%;
@@ -849,7 +853,7 @@ button:focus:not(:focus-visible) {
     }
 
     .owl-carousel .item .country-img {
-        width: 55%;
+        width: 60%;
     }
 }
 
@@ -977,7 +981,6 @@ button:focus:not(:focus-visible) {
 }
 
 @media screen and (max-width: 321px) {
-
     /* header style */
     .navbar-div {
         padding: 20px 0px;
@@ -1029,7 +1032,6 @@ button:focus:not(:focus-visible) {
 }
 
 @media screen and (min-width:768px) {
-
     .sub-text-blue-size,
     .sub-text-gray-size {
         font-weight: 900;
@@ -1148,10 +1150,6 @@ button:focus:not(:focus-visible) {
     background-color: #0099ff;
 }
 
-/* .details .bg-light-blue:hover  {
-    background-color: #023BE0;
-} */
-
 .details .icon {
     font-size: 40px;
     margin-bottom: 10px;
@@ -1228,15 +1226,13 @@ button:focus:not(:focus-visible) {
         padding: 30px;
     }
 
-    .details .banner img {
+    /* 20022025 update  
+     .details .banner img {
         margin-top: 20px;
         width: 80%;
 
-    }
+    }  */
 }
-
-
-
 
 
 
@@ -1264,8 +1260,6 @@ button:focus:not(:focus-visible) {
 .viewarrow {
     background: #1CE7E7;
 }
-
-
 
 .Frequentlyaskdivition {
     background: linear-gradient(96.66deg, #E6F2FC 3.77%, #E7F2F9 41.43%, rgba(232, 242, 245, 0.25) 99.77%);
@@ -1338,7 +1332,6 @@ button:focus:not(:focus-visible) {
     }
 }
 
-
 .viewallfaqbutton {
     background: #FFFFFF;
     font-weight: 600;
@@ -1362,11 +1355,10 @@ button:focus:not(:focus-visible) {
 }
 
 
-/* footer style */
 
+/* footer style */
 .footer {
     background-color: #011332;
-
 }
 
 .footer a {
@@ -1478,8 +1470,6 @@ button:focus:not(:focus-visible) {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
-    /* display: inline-block; */
 }
 
 .image-container .seriol-no {
@@ -1491,7 +1481,6 @@ button:focus:not(:focus-visible) {
     position: absolute;
     display: none;
 }
-
 
 .trend .image-container img {
     width: 100%;
@@ -1515,10 +1504,6 @@ button:focus:not(:focus-visible) {
 .trend .email {
     color: #1CE7E7;
 }
-
-/* .trend .carousellocation {
-    color: #FFFFFFBF;
-} */
 
 .trend .carouselpara {
     font-weight: 400;
@@ -1584,19 +1569,71 @@ button:focus:not(:focus-visible) {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
+    .newsletter input[type="email"]::-webkit-input-placeholder {     
+        font-weight: 700;
+        font-size: 12px;    
+    }
+    .footer .viewallfaq-arrow {
+       right: 30px;
+    }
+    .details .view-category {
+        width: 60%;
+        bottom: -4px;
+        left: -8px;
+        z-index: 3;
+    }
+    .view-category-div .SE-arrowes {
+        z-index: 3;
+        top: 22px;
+    }
+}
+@media (max-width: 1200px) {
+    .details .view-category {
+        width: 70%;
+    }
+    
+}
+@media (max-width: 992px) {
+    .newsletter input[type="email"]::-webkit-input-placeholder {     
+        font-weight: 700;
+        font-size: 14px;    
+    }
+    .footer .viewallfaq-arrow { 
+       right: 80px;    
+    }
+     .details .view-category {
+        width: 85%;
+        bottom: -4px;
+        left: -8px;
+        z-index: 3;
+    }
+    .view-category-div .SE-arrowes {
+        right: 60px;
+    }
+}
+@media (max-width: 769px) {
     .trend .owl-nav {
         display: block;
         top: -20%;
         right: 0;
     }
+    .footer .viewallfaq-arrow {    
+        right: 65px;  
+     }
+     .details .banner h1 {
+        font-size: 30px;
+        line-height: 30px;
+     }
 }
 
 @media (max-width: 576px) {
     .trend .viewtoplist {
         width: 360px;
     }
-
+    .footer .viewallfaq-arrow {    
+        right: 65px;  
+     }
     .trend .viewalltoplist {
         position: absolute;
         bottom: -245px;
@@ -1612,6 +1649,19 @@ button:focus:not(:focus-visible) {
         top: -20%;
         right: 0;
     }
+    .details .view-category {
+      width: 70%;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .details-tittle {
+        font-size: 50px;
+    }
+.view-category-div .SE-arrowes {
+    width: 34px;
+    height: 30px;
+    right: 55px;
+top: 17px;}
 
 }
 
@@ -1621,6 +1671,16 @@ button:focus:not(:focus-visible) {
         top: -25%;
         right: 0;
     }
+    .footer .viewallfaq-arrow {    
+        right: 45px;  
+     }
+     .details .view-category {
+        width: 100%;}
+        .view-category-div .SE-arrowes {
+            width: 34px;
+            height: 30px;
+            right: 45px;
+        top: 17px;}
 }
 
 @media (max-width: 320px) {
