@@ -1497,8 +1497,8 @@ button:focus:not(:focus-visible) {
 
 .trend .carousel-sectionflag {
     position: absolute;
-    right: 20px;
-    top: 30px;
+    right: 18px;
+    top: 18px;
 }
 
 .trend .email {
@@ -1541,10 +1541,10 @@ button:focus:not(:focus-visible) {
 
 .trend .image-number {
     position: absolute;
-    top: 6%;
-    left: 10%;
+    top: 20px;
+    left: 12%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     padding: 5px 10px;
@@ -1595,6 +1595,9 @@ button:focus:not(:focus-visible) {
     
 }
 @media (max-width: 992px) {
+    .trend .image-number {
+       left:9%
+    }
     .newsletter input[type="email"]::-webkit-input-placeholder {     
         font-weight: 700;
         font-size: 14px;    
@@ -1624,6 +1627,9 @@ button:focus:not(:focus-visible) {
      .details .banner h1 {
         font-size: 30px;
         line-height: 30px;
+     }
+     .trend .image-number {
+        left:8%
      }
 }
 
@@ -1657,6 +1663,9 @@ button:focus:not(:focus-visible) {
     .details-tittle {
         font-size: 50px;
     }
+    .trend .image-number {
+        left:8.5%
+     }
 .view-category-div .SE-arrowes {
     width: 34px;
     height: 30px;
@@ -1709,6 +1718,6 @@ top: 17px;}
     }
 
     .trend .image-number {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
