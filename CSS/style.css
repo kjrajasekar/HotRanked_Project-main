@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Mona Sans", serif;
 }
+.container-fluid{
+    max-width: 1440px !important;
+}
 
 .ft-roboto {
     font-weight: 400;
@@ -52,6 +55,9 @@ h1 {
     left: 0;
     rotate: 180deg;
     width: 20%;
+}
+.banner{
+    background: linear-gradient(135deg, #E6F2FC, #E7F2F9, #E8F2F5);
 }
 
 .banner .hr-tittle {
