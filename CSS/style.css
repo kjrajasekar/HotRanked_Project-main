@@ -317,7 +317,7 @@ button:focus:not(:focus-visible) {
     width: 25%;
 }
 .country .owl-stage .owl-item  {
-    margin: -5px !important;
+    /* margin: -5px !important; */
 }
 
 .feature-card .substract-img {
@@ -1282,22 +1282,22 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
 }
 
-.accordion-button {
+.faqs .accordion-button {
     border-style: solid;
     font-weight: 700;
     letter-spacing: 0%;
 }
 
-.accordion-item {
+.faqs .accordion-item {
     border: 1px solid #0E7FE9BF !important;
     box-shadow: 0px 0px 10px 5px #D2E0EBBF;
 }
 
-.accordion-button {
+.faqs .accordion-button {
     border-bottom: 1px solid none;
 }
 
-.accordion-button:not(.collapsed) {
+.faqs .accordion-button:not(.collapsed) {
     background-color: white;
 }
 
@@ -1308,16 +1308,16 @@ button:focus:not(:focus-visible) {
     width: 10%;
 }
 
-.accordion-button::after {
+.faqs .accordion-button::after {
     background-image: url(../Images/+.png);
     background-size: auto;
 }
 
-.accordion-button:not(.collapsed)::after {
+.faqs .accordion-button:not(.collapsed)::after {
     background-image: url(../Images/_.png);
 }
 
-.viewallfaq {
+ .viewallfaq {
     background: #FFFFFF;
     border: 2px solid #000000;
 }
@@ -1349,7 +1349,7 @@ button:focus:not(:focus-visible) {
 .footer .viewallfaq-arrow {
     padding: 0.85rem !important;
    width: 36px;
-   right: 45px;
+   right: 15px;
    top: 8px;
    height: 36px;
 }
@@ -1395,7 +1395,7 @@ button:focus:not(:focus-visible) {
 .newsletter input {
     border: none;
     padding: 14px;
-    width: 90%;
+    width: 100%;
     border-radius: 30px;
 }
 .newsletter input[type="email"]::-webkit-input-placeholder {
